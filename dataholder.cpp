@@ -130,3 +130,16 @@ QList<int> DataHolder::GetClassesIds() const
     }
     return classes;
 }
+
+DataClass DataHolder::FindClassByFeatures(const DataFeature &features) const
+{
+    for (int i = 0; i < m_dataFeatures.length(); i++)
+    {
+        if (m_dataFeatures[i] == features)
+        {
+            return GetClassById(m_dataFeatures[i].GetClassId());
+        }
+    }
+
+    return DataClass();
+}

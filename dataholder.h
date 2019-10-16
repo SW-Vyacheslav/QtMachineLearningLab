@@ -24,6 +24,8 @@ public:
     QList<DataFeature> GetDataFeaturesOfClass(const int& classId) const;
     QList<int> GetClassesIds() const;
 
+    DataClass FindClassByFeatures(const DataFeature& features) const;
+
 private:
     QList<DataFeature> m_dataFeatures;
     QList<DataClass> m_classes;

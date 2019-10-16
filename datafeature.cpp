@@ -29,3 +29,8 @@ int DataFeature::GetNumOfFeatures() const
 {
     return m_features.length();
 }
+
+bool DataFeature::operator==(const DataFeature &features) const
+{
+    return features.m_features == m_features;
+}

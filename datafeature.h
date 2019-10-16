@@ -15,6 +15,8 @@ public:
     int GetClassId() const;
     int GetNumOfFeatures() const;
 
+    bool operator==(const DataFeature& features) const;
+
 private:
     int m_classId;
     QList<int> m_features;

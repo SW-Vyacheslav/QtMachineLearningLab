@@ -17,13 +17,15 @@ SOURCES += main.cpp\
     datafeature.cpp \
     datamodel.cpp \
         mainwindow.cpp \
-    dataholder.cpp
+    dataholder.cpp \
+    paintwidget.cpp
 
 HEADERS  += mainwindow.h \
     dataclass.h \
     datafeature.h \
     dataholder.h \
-    datamodel.h
+    datamodel.h \
+    paintwidget.h
 
 FORMS    += mainwindow.ui
 
